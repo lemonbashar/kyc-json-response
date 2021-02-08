@@ -118,70 +118,70 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "fields": [
-        {
-          "type": "TEXT_VIEW",
-          "name": "heading",
-          "properties": {
-            "title": "পরিবারের অন্য সদস্যদের বিবরণ"
-          }
         },
         {
-          "type": "TEXT_EDIT",
-          "validations": [
-          ],
-          "properties": {
-            "title": "মায়ের নাম"
-          },
-          "metadata": {
-            "entityName": "Account",
-            "entityField": "motherName",
-            "text": null
-          }
-        },
-        {
-          "type": "DROP_DOWN_SINGLE",
-          "validations": [],
-          "properties": {
-            "title": "অভিভাবক",
-            "optionMetaData": {
-              "entityName": "Guardian",
-              "entityField": "id",
-              "id": null
-            },
-            "options": [
-              {
-                "title": "স্বামী",
-                "id": 1
-              },
-              {
-                "title": "বাবা",
-                "id": 2
+          "fields": [
+            {
+              "type": "TEXT_VIEW",
+              "name": "heading",
+              "properties": {
+                "title": "পরিবারের অন্য সদস্যদের বিবরণ"
               }
-            ]
-          },
-          "metadata": {
-            "entityName": "Account",
-            "entityField": "guardian",
-            "id": null
-          }
-        },
-        {
-          "type": "TEXT_EDIT",
-          "validations": [
-          ],
-          "properties": {
-            "title": "অভিভাবকের নাম"
-          },
-          "metadata": {
-            "entityName": "Account",
-            "entityField": "guardianName",
-            "text": null
-          }
+            },
+            {
+              "type": "TEXT_EDIT",
+              "validations": [
+              ],
+              "properties": {
+                "title": "মায়ের নাম"
+              },
+              "metadata": {
+                "entityName": "Account",
+                "entityField": "motherName",
+                "text": null
+              }
+            },
+            {
+              "type": "DROP_DOWN_SINGLE",
+              "validations": [],
+              "properties": {
+                "title": "অভিভাবক",
+                "optionMetaData": {
+                  "entityName": "Guardian",
+                  "entityField": "id",
+                  "id": null
+                },
+                "options": [
+                  {
+                    "title": "স্বামী",
+                    "id": 1
+                  },
+                  {
+                    "title": "বাবা",
+                    "id": 2
+                  }
+                ]
+              },
+              "metadata": {
+                "entityName": "Account",
+                "entityField": "guardian",
+                "id": null
+              }
+            },
+            {
+              "type": "TEXT_EDIT",
+              "validations": [
+              ],
+              "properties": {
+                "title": "অভিভাবকের নাম"
+              },
+              "metadata": {
+                "entityName": "Account",
+                "entityField": "guardianName",
+                "text": null
+              }
+            }
+          ]
         }
       ]
     }
