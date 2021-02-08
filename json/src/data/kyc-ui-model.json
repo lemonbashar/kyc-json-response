@@ -1,0 +1,190 @@
+{
+  "tabs": [
+    {
+      "name": "ব্যক্তিগত",
+      "steps": [
+        {
+          "fields": [
+            {
+              "type": "TEXT_VIEW",
+              "name": "heading",
+              "properties": {
+                "title": "ব্যক্তিগত তথ্য"
+              }
+            },
+            {
+              "type": "GENDER_RADIO",
+              "rules": "",
+              "validations": [
+              ],
+              "properties": {
+                "optionMetaData": {
+                  "entityName": "Gender",
+                  "entityField": "id",
+                  "id": null
+                },
+                "options": [
+                  {
+                    "title": "পুরুষ",
+                    "id": 1
+                  },
+                  {
+                    "title": "মহিলা",
+                    "id": 2
+                  },
+                  {
+                    "title": "অন্য",
+                    "id": 3
+                  }
+                ]
+              },
+              "metadata": {
+                "entityName": "Account",
+                "entityField": "gender",
+                "id": null
+              }
+            },
+            {
+              "type": "DROP_DOWN_SINGLE",
+              "validations": [],
+              "properties": {
+                "title": "পেশা",
+                "optionMetaData": {
+                  "entityName": "Profession",
+                  "entityField": "id",
+                  "id": null
+                },
+                "options": [
+                  {
+                    "title": "ব্যবসা",
+                    "id": 1
+                  },
+                  {
+                    "title": "চাকরী",
+                    "id": 2
+                  },
+                  {
+                    "title": "কৃষক",
+                    "id": 3
+                  }
+                ]
+              },
+              "metadata": {
+                "entityName": "Account",
+                "entityField": "profession",
+                "id": null
+              }
+            },
+            {
+              "type": "TEXT_EDIT",
+              "validations": [
+              ],
+              "properties": {
+                "title": "মোবাইল নং",
+                "hints": "সঠিক মোবাইল নং দিন"
+              },
+              "metadata": {
+                "entityName": "Account",
+                "entityField": "mobileNumber",
+                "text": null
+              }
+            },
+            {
+              "type": "V_RADIO",
+              "validations": [
+              ],
+              "optionMetaData": {
+                "entityName": "MobileNumberType",
+                "entityField": "id",
+                "id": null
+              },
+              "properties": {
+                "title": "মোবাইল নম্বর ধরণ",
+                "options" : [
+                  {
+                    "title": "নিজস্ব ফোন",
+                    "id": 1
+                  },
+                  {
+                    "title": "অনুরুধ",
+                    "id": 2,
+                    "dialogType": 8
+                  }
+                ]
+              },
+              "metadata": {
+                "entityName": "Account",
+                "entityField": "mobileNumberType"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "type": "TEXT_VIEW",
+          "name": "heading",
+          "properties": {
+            "title": "পরিবারের অন্য সদস্যদের বিবরণ"
+          }
+        },
+        {
+          "type": "TEXT_EDIT",
+          "validations": [
+          ],
+          "properties": {
+            "title": "মায়ের নাম"
+          },
+          "metadata": {
+            "entityName": "Account",
+            "entityField": "motherName",
+            "text": null
+          }
+        },
+        {
+          "type": "DROP_DOWN_SINGLE",
+          "validations": [],
+          "properties": {
+            "title": "অভিভাবক",
+            "optionMetaData": {
+              "entityName": "Guardian",
+              "entityField": "id",
+              "id": null
+            },
+            "options": [
+              {
+                "title": "স্বামী",
+                "id": 1
+              },
+              {
+                "title": "বাবা",
+                "id": 2
+              }
+            ]
+          },
+          "metadata": {
+            "entityName": "Account",
+            "entityField": "guardian",
+            "id": null
+          }
+        },
+        {
+          "type": "TEXT_EDIT",
+          "validations": [
+          ],
+          "properties": {
+            "title": "অভিভাবকের নাম"
+          },
+          "metadata": {
+            "entityName": "Account",
+            "entityField": "guardianName",
+            "text": null
+          }
+        }
+      ]
+    }
+
+  ]
+}
